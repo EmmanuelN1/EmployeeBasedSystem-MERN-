@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 const dotenv = require('dotenv')
 const mongoose = require('mongoose');
-
+const pageRouter = require('./routes/route')
 
 //Middleware
 dotenv.config({path: './config.env'});
@@ -12,7 +12,7 @@ dotenv.config({path: './config.env'});
 mongoose.connect(process.env.DATABASE_LOCAL, {
     useNewUrlParser : true,
     useUnifiedTopology: true,
-    useCreateIndex: true
+    // useCreateIndex: true
 })
 
 
@@ -22,7 +22,8 @@ app.set('views', path.join(__dirname, 'views' ))
 app.use(express.static('public'));
 
 
-
+//router middleware
+app.use(pageRouter);
 
 
 //setting up the port which the app is listening to
