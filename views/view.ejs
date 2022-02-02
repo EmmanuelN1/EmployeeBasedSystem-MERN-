@@ -1,0 +1,98 @@
+<!-- importing the header -->
+<%- include('partials/header') -%>
+
+<div class="table-responsive-sm table-striped ">
+    <table class="table" id="dataTable" width="100%" cellspacing="0">
+        <thead>
+          <tr>
+            <th scope="col">S/N</th>
+            <th scope="col">FirstName</th>
+            <th scope="col">LastName</th>
+            <th scope="col">Salary</th>
+            <th scope="col">CRUD Operation</th>
+            <th scope="col">Email</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>$46000</td>
+              <td>
+                <a style="background-color: green; padding:2px 4px; color:white; text-decoration: none; border-radius: 5px;" class="" href="">Edit</a>
+                <a class="" style="background-color: red; padding:2px 4px; color:white; text-decoration: none; border-radius: 5px;" href="">Delete </a>
+                                <!-- <form style="display: inline;" action="" method="POST">
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    <button style="cursor: pointer;" type="submit" class="btn btn-danger">Delete</button>
+                                </form> -->
+            </td>
+              <td>Mark@lanarge.com</td>
+            </tr>
+
+
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>$55000</td>
+              <td>
+                <a style="background-color: green; padding:2px 4px; color:white; text-decoration: none; border-radius: 5px;" class="" href="">Edit</a>
+                <a class="" style="background-color: red; padding:2px 4px; color:white; text-decoration: none; border-radius: 5px;" href="">Delete </a>
+                                <!-- <form style="display: inline;" action="" method="POST">
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    <button style="cursor: pointer;" type="submit" class="btn btn-danger">Delete</button>
+                                </form> -->
+            </td>
+              <td>Jacob@lanarge.com</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>$50000</td>
+              <td>
+                <a style="background-color: green; padding:2px 4px; color:white; text-decoration: none; border-radius: 5px;" class="" href="">Edit</a>
+                    <a class="" style="background-color: red; padding:2px 4px; color:white; text-decoration: none; border-radius: 5px;" href="">Delete </a>
+                            <!-- <form style="display: inline;" action="" method="POST">
+                                <input type="hidden" name="_method" value="DELETE">
+                                <button style="cursor: pointer;" type="submit" class="btn btn-danger">Delete</button>
+                            </form> -->
+             </td>
+            <td>Larry@lanarge.com</td>
+            </tr>
+
+            <tr>
+                <th scope="row">4</th>
+                <td>Jones</td>
+                <td>Stones</td>
+                <td>$40000</td>
+                <td>
+                    <a style="background-color: green; padding:2px 4px; color:white; text-decoration: none; border-radius: 5px;" class="" href="">Edit</a>
+                    <a class="" style="background-color: red; padding:2px 4px; color:white; text-decoration: none; border-radius: 5px;" href="">Delete </a>
+                                <!-- <form style="display: inline;" action="" method="POST">
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    <button style="cursor: pointer;" type="submit" class="btn btn-danger">Delete</button>
+                                </form> -->
+            </td>
+              <td>Jones@lanarge.com</td>
+              </tr>
+          </tbody>
+
+        <tfooter>
+            <tr>
+              <th scope="col">S/N</th>
+            <th scope="col">FirstName</th>
+            <th scope="col">LastName</th>
+            <th scope="col">Salary</th>
+            <th scope="col">CRUD Operation</th>
+            <th scope="col">Email</th>
+            </tr>
+        </tfooter>
+        
+      </table>
+  </div>
+
+<!-- importing the footer -->
+<%- include('partials/footer') -%>
